@@ -8,22 +8,22 @@ im = imread('C:\Users\eucli\Documents\Projetos\Matlab\PDI_Braille\banco_de_image
 figure('Name','Imagem original');
 imshow(im);
 
-imSemVerde = im;
+imSemAmarelo = im;
 
 for(i=1:1:size(im,1)) 
   for(j=1:1:size(im,2))
     if(im(i,j,1)> 100 && im(i,j,2) > 100 && im(i,j,3) < 100)
-      imSemVerde(i,j, 1) = 255;
-      imSemVerde(i,j, 2) = 0;
-      imSemVerde(i,j, 3) = 0;
+      imSemAmarelo(i,j, 1) = 255;
+      imSemAmarelo(i,j, 2) = 0;
+      imSemAmarelo(i,j, 3) = 0;
     endif
   endfor
 endfor
 
-figure('Name','Imagem sem verde');
-imshow(imSemVerde);
+figure('Name','Imagem sem amarelo');
+imshow(imSemAmarelo);
 
-imCinza = rgb2gray(imSemVerde);
+imCinza = rgb2gray(imSemAmarelo);
 figure('Name','Imagem original em intensidades de cinza');
 imshow(imCinza);
 
