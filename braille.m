@@ -3,7 +3,7 @@ clear all
 
 pkg load image
 
-im = imread('C:\Users\eucli\Documents\Projetos\Matlab\PDI_Braille\banco_de_imagens\braille_o_rolha.jpeg');
+im = imread('C:\Users\eucli\Documents\Projetos\Matlab\PDI_Braille\banco_de_imagens\braille_r_biscoito.jpeg');
 
 figure('Name','Imagem original');
 imshow(im);
